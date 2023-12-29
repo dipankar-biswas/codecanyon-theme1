@@ -1,0 +1,103 @@
+// Display Flex
+@mixin df-jcc(){
+    display: flex;
+    justify-content: center;
+}
+@mixin df-aic(){
+    display: flex;
+    align-items: center;
+}
+@mixin df-ais(){
+    display: flex;
+    align-items: start;
+}
+@mixin df-jcc-aic(){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin df-jcsb-aic(){
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@mixin df-jcc-fdc(){
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+@mixin df-aic-fdc(){
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+@mixin df-jcc-aic-fdc(){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+// Transition All
+@mixin transition($duration){
+    -webkit-transition: all $duration ease;
+    -moz-transition: all $duration ease;
+    -ms-transition: all $duration ease;
+    -o-transition: all $duration ease;
+    transition: all $duration ease;
+}
+
+// Position
+@mixin pr-oh(){
+    position: relative;
+    overflow: hidden;
+}
+@mixin pr-oh-zi($i){
+    position: relative;
+    overflow: hidden;
+    z-index: $i;
+}
+@mixin pr-zi($i){
+    position: relative;
+    z-index: $i;
+}
+@mixin pa-c-lt-wh-bg(){}
+@mixin pa-c-lt-wh-bg-zi($pa,$c,$l,$t,$w,$h,$bg,$zi){
+    position: $pa;
+    content: $c;
+    left: $l;
+    top: $t;
+    width: $w;
+    height: $h;
+    background: $bg;
+    z-index: $zi;
+}
+@mixin pa-c-lb-wh-bg($pa,$c,$l,$b,$w,$h,$bg){
+    position: $pa;
+    content: $c;
+    left: $l;
+    bottom: $b;
+    width: $w;
+    height: $h;
+    background: $bg;
+}
+@mixin pa-c-lt-wh-bg-zi-o($pa,$c,$l,$t,$w,$h,$bg,$zi,$o){
+    position: $pa;
+    content: $c;
+    left: $l;
+    top: $t;
+    width: $w;
+    height: $h;
+    background: $bg;
+    z-index: $zi;
+    opacity: $o;
+}
+
+// Img
+@mixin img-whof($width,$height,$of){
+    width: $width;
+    height: $height;
+    object-fit: $of;
+}
+
+// 
