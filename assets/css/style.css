@@ -1144,14 +1144,23 @@ nav .pagination .page-item .page-link:focus {
   .count-down .item {
     margin: 12px;
   }
+  .project-wrap .project-tabs .tabs {
+    -moz-column-gap: 8px !important;
+         column-gap: 8px !important;
+  }
+  .project-wrap .projects {
+    grid-template-columns: repeat(3, minmax(200px, 1fr)) !important;
+  }
   .blog-wrap .blog-carousel .arrow .icon.left {
-    left: 10px;
+    left: 10px !important;
   }
   .blog-wrap .blog-carousel .arrow .icon.right {
-    right: 10px;
+    right: 10px !important;
   }
   .blog-wrap .blog-carousel .arrow .icon i {
-    background-color: rgba(255, 255, 255, 0.5882352941);
+    background-color: rgba(255, 255, 255, 0.5882352941) !important;
+    width: 36px !important;
+    height: 36px !important;
   }
   .service-wrap .services {
     grid-template-columns: repeat(2, minmax(200px, 1fr)) !important;
@@ -1182,6 +1191,12 @@ nav .pagination .page-item .page-link:focus {
   .banner .content {
     padding: 70px 12px !important;
   }
+  .displayVideo.show .view {
+    max-height: 450px !important;
+  }
+  .displayVideo.show .view iframe {
+    max-height: 450px !important;
+  }
   .service-wrap .services .service .content .name {
     line-height: 20px;
     height: 50px;
@@ -1200,6 +1215,35 @@ nav .pagination .page-item .page-link:focus {
   .count-down .item .box .txt {
     font-size: 14px !important;
   }
+  .project-wrap .project-tabs .tabs {
+    -moz-column-gap: 6px !important;
+         column-gap: 6px !important;
+  }
+  .project-wrap .projects {
+    grid-template-columns: repeat(3, minmax(160px, 1fr)) !important;
+    -moz-column-gap: 12px !important;
+         column-gap: 12px !important;
+  }
+  .project-wrap .projects .item .content {
+    padding: 8px !important;
+  }
+  .project-wrap .projects .item .content .title {
+    font-size: 15px !important;
+    margin-bottom: 4px !important;
+  }
+  .project-wrap .projects .item .content p {
+    font-size: 12px !important;
+    margin-bottom: 6px !important;
+    line-height: 15px !important;
+  }
+  .project-wrap .projects .item .content .actions {
+    -moz-column-gap: 8px !important;
+         column-gap: 8px !important;
+  }
+  .project-wrap .projects .item .content .actions .link {
+    padding: 2px 12px !important;
+    font-size: 11px !important;
+  }
   .page-data .contact .google-maps iframe {
     height: 330px !important;
   }
@@ -1213,6 +1257,12 @@ nav .pagination .page-item .page-link:focus {
   }
   .banner .content p {
     font-size: 16px !important;
+  }
+  .displayVideo.show .view {
+    max-height: 350px !important;
+  }
+  .displayVideo.show .view iframe {
+    max-height: 350px !important;
   }
   .service-wrap .services {
     grid-template-columns: 1fr !important;
@@ -1234,6 +1284,33 @@ nav .pagination .page-item .page-link:focus {
   }
   .count-down .item .box .txt {
     font-size: 14px !important;
+  }
+  .project-wrap .project-tabs .tabs {
+    -moz-column-gap: 6px !important;
+         column-gap: 6px !important;
+  }
+  .project-wrap .projects {
+    grid-template-columns: repeat(2, minmax(160px, 1fr)) !important;
+  }
+  .project-wrap .projects .item .content {
+    padding: 8px !important;
+  }
+  .project-wrap .projects .item .content .title {
+    font-size: 15px;
+    margin-bottom: 4px;
+  }
+  .project-wrap .projects .item .content p {
+    font-size: 12px;
+    margin-bottom: 6px;
+    line-height: 15px;
+  }
+  .project-wrap .projects .item .content .actions {
+    -moz-column-gap: 8px;
+         column-gap: 8px;
+  }
+  .project-wrap .projects .item .content .actions .link {
+    padding: 2px 12px;
+    font-size: 11px;
   }
   .page-data .contact .google-maps iframe {
     height: 280px !important;
