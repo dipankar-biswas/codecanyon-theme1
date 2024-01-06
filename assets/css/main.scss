@@ -1,35 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 
-:root {
-    --white-color : #fff;
-    --black-color : #000;
-
-    --primary-color : #ff6347;
-    --secondary-color : #5492bc;
-
-    --bg-color : #f2f2f2;
-    --bg-color1 : #a0a0a0;
-    --bg-color2 : #5492bc;
-
-    --heading : #444;
-    --paragraph : #777;
-    --text-color : #222;
-    --text-color1 : #555;
-
-    --hover-color : #9e95f5;
-    --hover-color1 : #5492bc;
-
-    --border-color : #ddd;
-
-    --box-shadow : 0 2px 6px rgba(0,0,0,.15);
-    --box-shadow1 : -1px 2px 22px rgba( 0, 0, 0, 0.15 );
-
-    --scrollbar-color : #0000;
-    --scrollbar-color1 : #d9d9d9;
-
-    --text-active-color : #ff5353;
-    --text-hover-color : #ff5353;
-}
 
 @import 'mixin';
 
@@ -55,14 +24,11 @@ ul {
     margin: 0;
     padding: 0;
 }
-hr {
-    margin: 12px 0;
-    border: 1px solid #f1f1f1;
-}
 .dt-none { display: none; }
 .ph-none { display: none; }
 
 /* Overlay */
+.overlay.show,
 .site-overlay.show {
     position: fixed;
     width: 100%;
@@ -75,17 +41,17 @@ hr {
 }
 
 .custom-btn {
-    background: #ff5757;
-    box-shadow: 0px 2px 3px 0px #fd5c5c;
-    color: #fff;
+    background: var(--primary-color);
+    box-shadow: 0px 2px 3px 0px var(--primary-color);
+    color: var(--white-color);
     padding: 10px 28px;
     outline: none;
     transform: scale(1.001);
     @include transition(0.3s);
     &:hover {
-        background: #fd5c5c;
-        box-shadow: 0px 2px 6px 0px #fd5c5c;
-        color: #fff;
+        background: var(--primary-color);
+        box-shadow: 0px 2px 6px 0px var(--primary-color);
+        color: var(--white-color);
     }
     &:active,
     &:focus,
@@ -99,17 +65,17 @@ hr {
 }
 
 .custom-btn1 {
-    background: #cb6ce6;
-    box-shadow: 0px 2px 3px 0px #d973f5;
-    color: #fff;
+    background: var(--secondary-color);
+    box-shadow: 0px 2px 3px 0px var(--secondary-color);
+    color: var(--white-color);
     padding: 10px 28px;
     outline: none;
     transform: scale(1.001);
     @include transition(0.3s);
     &:hover {
-        background: #d974f5;
-        box-shadow: 0px 2px 6px 0px #d973f5;
-        color: #fff;
+        background: var(--secondary-color);
+        box-shadow: 0px 2px 6px 0px var(--secondary-color);
+        color: var(--white-color);
     }
     &:active,
     &:focus,
@@ -126,7 +92,7 @@ select,
 textarea {
     width: 100%;
     padding: 12px 20px;
-    border: 1px solid #ddd;
+    border: 1px solid var(--border-color);
     outline: none;
     letter-spacing: 0.5px;
     font-size: 14px;
@@ -138,7 +104,7 @@ select:focus,
 select:focus-within,
 textarea:focus,
 textarea:focus-within {
-    border: 1px solid #cb6ce6;
+    border: 1px solid var(--border-color1);
     box-shadow: none !important;
 }
 .section-padding {
@@ -153,7 +119,7 @@ textarea:focus-within {
         display: inline-block;
         position: relative;
         &::after {
-            @include pa-c-lb-wh-bg(absolute,'',50%,-8px,50%,3px,#cb6ce6);
+            @include pa-c-lb-wh-bg(absolute,'',50%,-8px,50%,3px,var(--primary-color));
             border-radius: 100%;
             transform: translateX(-50%);
         }
@@ -169,11 +135,11 @@ textarea:focus-within {
 
 /* =================== */
 #apps {
-    height: 100vh;
     max-width: 1920px;
+    position: relative;
     .top-navbar {
         height: 32px;
-        background-color: #ff5757;
+        background-color: var(--secondary-color);
         select {
             font-size: 14px !important;
             -webkit-appearance: auto;
@@ -182,34 +148,35 @@ textarea:focus-within {
             background-image: none;
             padding: 0;
             option {
-                color: #444 !important;
+                color: var(--text-color) !important;
             }
         }
         .social {
             .item {
                 .link {
                     i {
-                        color: #fff;
+                        color: var(--white-color);
                     }
                 }
             }
         }
     }
     header {
+        position: sticky;
+        top: 0;
+        z-index: 999;
         .logo-bar {
             @include df-jcc-aic();
 
-            background: #fff;
+            background-color: var(--white-color);
             padding: 12px 0;
             box-shadow: 0 2px 4px rgba(0,0,0,.065);
-            .h-search {
-                input {
-                    padding: 9px 20px;
-                }
-                button {
-                    box-shadow: none !important;
-                    &:hover {
-                        box-shadow: none !important;
+            .logo {
+                a {
+                    display: inline-flex;
+                    img {
+                        max-width: 200px;
+                        height: 60px;
                     }
                 }
             }
@@ -226,11 +193,7 @@ textarea:focus-within {
                 @include df-jcc();
                 .item {
                     position: relative;
-                    &:hover,
-                    &.active {
-                        & > .link {
-                            color: #cb6ce6;
-                        }
+                    &:hover {
                         .submenu {
                             top: 100%;
                             overflow: hidden;
@@ -239,11 +202,17 @@ textarea:focus-within {
                             z-index: 2;
                         }
                     }
+                    &:hover,
+                    &.active {
+                        & > .link {
+                            color: var(--link-active-color);
+                        }
+                    }
                     .link {
                         display: inline-flex;
                         align-items: center;
                         column-gap: 4px;
-                        color: #444;
+                        color: var(--link-color);
                         padding: 4px 12px;
                         @include transition(0.3s);
                         .txt {
@@ -252,6 +221,8 @@ textarea:focus-within {
                         }
                         .icon {
                             margin-top: 2px;
+                            position: absolute;
+                            right: 0;
                         }
                     }
                     .submenu {
@@ -259,8 +230,8 @@ textarea:focus-within {
                         top: 140%;
                         left: 0;
                         z-index: 0;
-                        background: #fff;
-                        box-shadow: 0 4px 12px rgba(0,0,0,.08);
+                        background-color: var(--white-color);
+                        box-shadow: var(--box-shadow);
                         border-radius: 4px;
                         min-width: 200px;
                         width: 100%;
@@ -285,9 +256,8 @@ textarea:focus-within {
 
     footer {
         overflow: hidden;
-        .footer-top {}
         .footer-middle {
-            background: #f2f2f2;
+            background-color: var(--bg-color);
             .widgets {
                 display: grid;
                 grid-template-columns: 40% 30% 30%;
@@ -298,6 +268,8 @@ textarea:focus-within {
                         img {
                             max-width: 240px;
                             width: 100%;
+                            height: 80px;
+                            object-fit: contain;
                         }
                     }
                     & > .title {
@@ -308,10 +280,10 @@ textarea:focus-within {
                         .list {
                             line-height: 28px;
                             .link {
-                                color: #444;
+                                color: var(--link-color);
                                 @include transition(0.3s);
                                 &:hover {
-                                    color: #cb6ce6;
+                                    color: var(--link-hover-color);
                                 }
                             }
                         }
@@ -327,7 +299,7 @@ textarea:focus-within {
                             margin-top: 8px;
                             .item {
                                 .link {
-                                    color: #777;
+                                    color: var(--link-color);
                                 }
                             }
                         }
@@ -335,7 +307,6 @@ textarea:focus-within {
                 }
             }
         }
-        .footer-bottom {}
     }
 
 
@@ -346,19 +317,19 @@ textarea:focus-within {
                 display: inline-block;
                 @include transition(0.3s);
                 &.facebook {
-                    color: #1877f2 !important;
+                    color: var(--facebook-color) !important;
                 }
                 &.twitter {
-                    color: #1DA1F2 !important;
+                    color: var(--twitter-color) !important;
                 }
                 &.instagram {
-                    color: #EE3567 !important;
+                    color: var(--instagram-color) !important;
                 }
                 &.linkedin {
-                    color: #0077B5 !important;
+                    color: var(--linkedin-color) !important;
                 }
                 &.youtube {
-                    color: #fE4444 !important;
+                    color: var(--youtube-color) !important;
                 }
                 &:hover {
                     transform: translateY(-3px);
@@ -387,14 +358,6 @@ textarea:focus-within {
                        } 
                     }
                 }
-                .logo {
-                    justify-content: center !important;
-                }
-                .search {
-                    i {
-                        font-size: 22px;
-                    } 
-                }
             }
             .navigation {
                 position: fixed;
@@ -406,7 +369,7 @@ textarea:focus-within {
                 width: 0;
                 height: 100% !important;
                 overflow-y: auto;
-                background-color: #fff;
+                background-color: var(--white-color);
                 box-shadow: 0 -8px 4px rgba(0,0,0,.08);
                 white-space: nowrap;
                 @include transition(0.3s);
@@ -422,15 +385,15 @@ textarea:focus-within {
                             justify-content: start;
                             .head {
                                 @include df-jcsb-aic();
-                                border-bottom: 1px solid #ddd;
-                                padding-bottom: 12px;
-                                margin-bottom: 20px;
+                                border-bottom: 1px solid var(--border-color);
+                                padding-bottom: 8px;
+                                margin: 8px 0;
                                 .title {
                                     font-weight: 600;
                                 }
                                 span {
                                     font-size: 20px;
-                                    color: #fd5c5c;
+                                    color: var(--primary-color);
                                 }
                             }
                             .item {
@@ -444,7 +407,7 @@ textarea:focus-within {
                                     box-shadow: none;
                                     padding: 0;
                                     
-                                    background-color: white;
+                                    background-color: var(--white-color);
                                     max-height: 0;
                                     overflow: hidden;
                                     transition: max-height 0.2s ease-out;

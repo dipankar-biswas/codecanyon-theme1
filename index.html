@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/slide.css">
-    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
 </head>
 <body>
     <div id="apps">
@@ -56,25 +56,26 @@
 
         <!-- Header Code Start -->
         <header class="header">
+            <div class="overlay"></div>
             <div class="logo-bar">
                 <div class="container h-100">
                     <div class="row h-100">
-                        <div class="col-3 dt-none ph-lg-block">
-                            <div class="mobile-bars d-flex justify-content-start align-items-center h-100 column-gap-4">
+                        <div class="col-lg-2 col-8">
+                            <div class="logo d-flex justify-content-start align-items-center h-100">
+                                <a href="index.html">
+                                    <img src="assets/images/Logo.png" alt="Logo">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-4 dt-none ph-lg-block">
+                            <div class="mobile-bars d-flex justify-content-end align-items-center h-100 column-gap-4">
                                 <div class="icon aside-open">
                                     <i class="fa-solid fa-bars"></i>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-2 col-6">
-                            <div class="logo d-flex justify-content-start align-items-center h-100">
-                                <a href="index.html">
-                                    <img class="mw-100" src="assets/images/Logo.png" alt="Logo">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-lg-8 ph-lg-none">
-                            <div class="d-flex justify-content-center align-items-center h-100 column-gap-3">
+                        <div class="col-lg-10">
+                            <div class="d-flex justify-content-end align-items-center h-100 column-gap-3">
                                 <div class="navigation">
                                     <div class="container">
                                         <div class="row">
@@ -94,7 +95,7 @@
                                                     </a>
                                                 </li>
                                                 <li class="item tree">
-                                                    <a class="link" href="servicess.html">
+                                                    <a class="link" href="services.html">
                                                         <span class="txt">Our Services</span>
                                                         <span class="icon"><i class="fa-solid fa-angle-down"></i></span>
                                                     </a>
@@ -156,13 +157,6 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-2 col-3">
-                            <div class="d-flex justify-content-end align-items-center h-100 column-gap-4">
-                                <div class="apply">
-                                    <a href="#" class="custom-btn text-white fw-bold rounded-3">Contact</a>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -173,111 +167,51 @@
         <!-- Body Code Start -->
         <div class="page-wrapper">
             <!-- Slider Code Start -->
-            <div class="container">
-                <div class="slide-wrap animation">
-                    <ul class="slides">
-                        <li class="slide">
-                            <div class="content">
-                                <div class="img">
-                                    <img src="assets/images/slider/01.jpeg" alt="Image" draggable="false">
-                                </div>
-                                <div class="text">
-                                    <h3 class="title mb-3">Slide Title One</h3>
-                                    <p class="short-des fs-5 d-block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla eius dolore officiis est vel et eum iste enim repudiandae illum maxime, quibusdam, illo animi ipsa, quaerat consequuntur fugiat id. Commodi!</p>
-                                    <a href="#" class="link custom-btn1 rounded mt-4 d-inline-block fs-5">Read More</a>
-                                </div>
+            <div class="slide-wrap">
+                <ul class="slides">
+                    <li class="slide" style="background-image: url('assets/images/banner/banner-04.jpg');">
+                        <div class="content">
+                            <div class="text animation fadeInDown">
+                                <h3 class="title mb-3">Slide Title One</h3>
+                                <p class="short-des fs-5 d-block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla eius dolore officiis est vel et eum iste enim repudiandae illum maxime, quibusdam, illo animi ipsa, quaerat consequuntur fugiat id. Commodi!</p>
+                                <a href="#" class="link custom-btn1 rounded mt-4 d-inline-block ">Read More</a>
                             </div>
-                        </li>
-                        <li class="slide">
-                            <div class="content">
-                                <div class="img">
-                                    <img src="assets/images/slider/02.jpeg" alt="Image" draggable="false">
-                                </div>
-                                <div class="text">
-                                    <h3 class="title mb-3">Slide Title Two</h3>
-                                    <p class="short-des fs-5 d-block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus libero dolorum sed molestias blanditiis earum quam error in quae. Iure molestias magni doloribus veniam, consequatur a dicta eum modi voluptatibus!</p>
-                                    <a href="#" class="link custom-btn1 rounded mt-4 d-inline-block fs-5">Read More</a>
-                                </div>
+                        </div>
+                    </li>
+                    <li class="slide" style="background-image: url('assets/images/banner/banner-02.jpg');">
+                        <div class="content">
+                            <div class="text animation fadeInDown">
+                                <h3 class="title mb-3">Slide Title Two</h3>
+                                <p class="short-des fs-5 d-block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus libero dolorum sed molestias blanditiis earum quam error in quae. Iure molestias magni doloribus veniam, consequatur a dicta eum modi voluptatibus!</p>
+                                <a href="#" class="link custom-btn1 rounded mt-4 d-inline-block ">Read More</a>
                             </div>
-                        </li>
-                        <li class="slide">
-                            <div class="content">
-                                <div class="img">
-                                    <img src="assets/images/slider/03.jpeg" alt="Image" draggable="false">
-                                </div>
-                                <div class="text">
-                                    <h3 class="title mb-3">Slide Title Three</h3>
-                                    <p class="short-des fs-5 d-block">Lorem ipsum dolor sit amet consectetur, adipisicing elit. A magni reprehenderit libero accusamus fuga, aspernatur id nam molestias illum eveniet debitis, sit quam? Quidem at, numquam eius impedit ratione voluptatibus?</p>
-                                    <a href="#" class="link custom-btn1 rounded mt-4 d-inline-block fs-5">Read More</a>
-                                </div>
+                        </div>
+                    </li>
+                    <li class="slide" style="background-image: url('assets/images/banner/banner-01.jpg');">
+                        <div class="content">
+                            <div class="text animation fadeInDown">
+                                <h3 class="title mb-3">Slide Title Three</h3>
+                                <p class="short-des fs-5 d-block">Lorem ipsum dolor sit amet consectetur, adipisicing elit. A magni reprehenderit libero accusamus fuga, aspernatur id nam molestias illum eveniet debitis, sit quam? Quidem at, numquam eius impedit ratione voluptatibus?</p>
+                                <a href="#" class="link custom-btn1 rounded mt-4 d-inline-block ">Read More</a>
                             </div>
-                        </li>
-                        <li class="slide">
-                            <div class="content">
-                                <div class="img">
-                                    <img src="assets/images/slider/04.jpeg" alt="Image" draggable="false">
-                                </div>
-                                <div class="text">
-                                    <h3 class="title mb-3">Slide Title Four</h3>
-                                    <p class="short-des fs-5 d-block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores harum asperiores consectetur provident, ea, totam incidunt vel numquam adipisci perspiciatis itaque doloremque libero molestias rerum minus laborum voluptatem omnis? Laboriosam.</p>
-                                    <a href="#" class="link custom-btn1 rounded mt-4 d-inline-block fs-5">Read More</a>
-                                </div>
+                        </div>
+                    </li>
+                    <li class="slide" style="background-image: url('assets/images/banner/banner-03.jpg');">
+                        <div class="content">
+                            <div class="text animation fadeInDown">
+                                <h3 class="title mb-3">Slide Title Four</h3>
+                                <p class="short-des fs-5 d-block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores harum asperiores consectetur provident, ea, totam incidunt vel numquam adipisci perspiciatis itaque doloremque libero molestias rerum minus laborum voluptatem omnis? Laboriosam.</p>
+                                <a href="#" class="link custom-btn1 rounded mt-4 d-inline-block ">Read More</a>
                             </div>
-                        </li>
-                        <li class="slide">
-                            <div class="content">
-                                <div class="img">
-                                    <img src="assets/images/slider/05.jpeg" alt="Image" draggable="false">
-                                </div>
-                                <div class="text">
-                                    <h3 class="title mb-3">Slide Title Five</h3>
-                                    <p class="short-des fs-5 d-block">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur aspernatur error vel, iusto dignissimos minus nihil est a. Nostrum in aut nisi error itaque quae numquam laborum perspiciatis iste blanditiis.</p>
-                                    <a href="#" class="link custom-btn1 rounded mt-4 d-inline-block fs-5">Read More</a>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="slide">
-                            <div class="content">
-                                <div class="img">
-                                    <img src="assets/images/slider/06.jpeg" alt="Image" draggable="false">
-                                </div>
-                                <div class="text">
-                                    <h3 class="title mb-3">Slide Title Six</h3>
-                                    <p class="short-des fs-5 d-block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga eaque consectetur labore! Doloremque dolore, distinctio accusantium nostrum cupiditate numquam dolores quod nam eius nihil. Saepe culpa explicabo nobis nemo natus.</p>
-                                    <a href="#" class="link custom-btn1 rounded mt-4 d-inline-block fs-5">Read More</a>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="slide">
-                            <div class="content">
-                                <div class="img">
-                                    <img src="assets/images/slider/07.webp" alt="Image" draggable="false">
-                                </div>
-                                <div class="text">
-                                    <h3 class="title mb-3">Slide Title Seven</h3>
-                                    <p class="short-des fs-5 d-block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis molestias repellat dolore aspernatur eaque, ducimus tempore adipisci rem a, error distinctio aliquid aliquam aut quia voluptatem nemo! Debitis, obcaecati reprehenderit.</p>
-                                    <a href="#" class="link custom-btn1 rounded mt-4 d-inline-block fs-5">Read More</a>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="slide">
-                            <div class="content">
-                                <div class="img">
-                                    <img src="assets/images/slider/08.webp" alt="Image" draggable="false">
-                                </div>
-                                <div class="text">
-                                    <h3 class="title mb-3">Slide Title Eight</h3>
-                                    <p class="short-des fs-5 d-block">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem optio natus perferendis? Magnam eos mollitia soluta voluptatum fuga? Vero qui culpa est? Dolore consectetur aut quo est vitae dignissimos animi.</p>
-                                    <a href="#" class="link custom-btn1 rounded mt-4 d-inline-block fs-5">Read More</a>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                    <div class="arrow">
-                        <div id="left" class="icon left"><i class="fa-solid fa-angle-left"></i></div>
-                        <div id="right" class="icon right"><i class="fa-solid fa-angle-right"></i></div>
-                    </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="arrow">
+                    <div id="left" class="icon left"><i class="fa-solid fa-angle-left"></i></div>
+                    <div id="right" class="icon right"><i class="fa-solid fa-angle-right"></i></div>
                 </div>
+            </div>
+            <div class="container">
             </div>
             <!-- Slider Code End -->
 
@@ -289,7 +223,7 @@
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, eligendi? Doloremque amet eligendi eos voluptatum, sunt consequatur ipsam? Debitis iste totam error neque asperiores sequi architecto corrupti deserunt odit repellat?</p>
                     </div>
                     <div class="services">
-                        <div class="service">
+                        <div class="service animation fadeInUp">
                             <div class="icon">
                                 <i class="fa-solid fa-code"></i>
                             </div>
@@ -299,7 +233,7 @@
                                 <a href="contact-us.html" class="link"><span>Contact Now</span> <i class="fa-solid fa-angles-right"></i></a>
                             </div>
                         </div>
-                        <div class="service">
+                        <div class="service animation fadeInUp">
                             <div class="icon">
                                 <i class="fa-solid fa-microchip"></i>
                             </div>
@@ -309,7 +243,7 @@
                                 <a href="contact-us.html" class="link"><span>Contact Now</span> <i class="fa-solid fa-angles-right"></i></a>
                             </div>
                         </div>
-                        <div class="service">
+                        <div class="service animation fadeInUp">
                             <div class="icon">
                                 <i class="fa-solid fa-fingerprint"></i>
                             </div>
@@ -319,7 +253,7 @@
                                 <a href="contact-us.html" class="link"><span>Contact Now</span> <i class="fa-solid fa-angles-right"></i></a>
                             </div>
                         </div>
-                        <div class="service">
+                        <div class="service animation fadeInUp">
                             <div class="icon">
                                 <i class="fa-solid fa-chart-line"></i>
                             </div>
@@ -329,7 +263,7 @@
                                 <a href="contact-us.html" class="link"><span>Contact Now</span> <i class="fa-solid fa-angles-right"></i></a>
                             </div>
                         </div>
-                        <div class="service">
+                        <div class="service animation fadeInUp">
                             <div class="icon">
                                 <i class="fa-solid fa-globe"></i>
                             </div>
@@ -339,7 +273,7 @@
                                 <a href="contact-us.html" class="link"><span>Contact Now</span> <i class="fa-solid fa-angles-right"></i></a>
                             </div>
                         </div>
-                        <div class="service">
+                        <div class="service animation fadeInUp">
                             <div class="icon">
                                 <i class="fa-solid fa-user-graduate"></i>
                             </div>
@@ -359,12 +293,12 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-6">
-                            <div class="image">
+                            <div class="image animation fadeInLeft">
                                 <img src="assets/images/slider/04.jpeg" alt="About Image">
                             </div>
                         </div>
                         <div class="col-lg-6">
-                            <div class="content">
+                            <div class="content animation fadeInRight">
                                 <div class="heading text-start">
                                     <h2 class="title">About Us</h2>
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -382,13 +316,19 @@
                                         </div>
                                         <div class="icon"><i class="fa-brands fa-youtube"></i></div>
                                     </div>
-                                    <a href="about-us.html" class="custom-btn shadow-none rounded d-inline-block">Read More</a>
+                                    <a href="about-us.html" class="custom-btn1 shadow-none rounded d-inline-block">Read More</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
+            <div class="displayVideo">
+                <div class="view">
+                    <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+                </div>
+                <div class="close-btn"><i class="fa-solid fa-xmark"></i></div>
+            </div>
             <!-- About Us End -->
 
             <!-- Counter Box Start -->
@@ -399,38 +339,38 @@
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     </div>
                     <div class="row">
-                        <div class="col-lg-3">
-                            <div class="item">
+                        <div class="col-lg-3 col-6">
+                            <div class="item animation fadeInDown">
                                 <div class="box">
                                     <div class="icon"><i class="fa-solid fa-handshake"></i></div>
-                                    <h4 class="counter">4</h4>
+                                    <h4><span class="counter" data-val="4">00</span><span></span></h4>
                                     <p class="txt">Satisfied Clients</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3">
-                            <div class="item">
+                        <div class="col-lg-3 col-6">
+                            <div class="item animation fadeInDown">
                                 <div class="box">
                                     <div class="icon"><i class="fa-solid fa-business-time"></i></div>
-                                    <h4 class="counter">13</h4>
+                                    <h4><span class="counter" data-val="13">00</span><span></span></h4>
                                     <p class="txt">Projects Completed</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3">
-                            <div class="item">
+                        <div class="col-lg-3 col-6">
+                            <div class="item animation fadeInDown">
                                 <div class="box">
                                     <div class="icon"><i class="fa-solid fa-users"></i></div>
-                                    <h4 class="counter">15+</h4>
+                                    <h4><span class="counter" data-val="27">00</span><span>+</span></h4>
                                     <p class="txt">Team Members</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3">
-                            <div class="item">
+                        <div class="col-lg-3 col-6">
+                            <div class="item animation fadeInDown">
                                 <div class="box">
                                     <div class="icon"><i class="fa-solid fa-trophy"></i></div>
-                                    <h4 class="counter">0</h4>
+                                    <h4><span class="counter" data-val="7">00</span><span></span></h4>
                                     <p class="txt">Awards Win</p>
                                 </div>
                             </div>
@@ -439,6 +379,330 @@
                 </div>
             </div>
             <!-- Counter Box End -->
+
+            <!-- Our Projects Start -->
+            <div class="project-wrap section-padding">
+                <div class="container">
+                    <div class="heading">
+                        <h2 class="title">Our Project's</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, eligendi? Doloremque amet eligendi eos voluptatum, sunt consequatur ipsam? Debitis iste totam error neque asperiores sequi architecto corrupti deserunt odit repellat?</p>
+                    </div>
+                    <ul class="project-tabs">
+                        <div class="tabs">
+                            <li class="tab active" data-filter="all">All</li>
+                            <li class="tab" data-filter="design">Design</li>
+                            <li class="tab" data-filter="developer">Developer</li>
+                            <li class="tab" data-filter="marketing">Marketing</li>
+                        </div>
+                    </ul>
+                    <div class="projects">
+                        <div class="item" data-name="developer">
+                            <div class="thumb">
+                                <img src="assets/images/gallery/gallery-01.jpg" alt="Image">
+                            </div>
+                            <div class="content">
+                                <h4 class="title">Project Title</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                <div class="actions">
+                                    <a href="#" class="link">Demo</a>
+                                    <a href="#" class="link">Github</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item" data-name="design">
+                            <div class="thumb">
+                                <img src="assets/images/gallery/gallery-02.jpg" alt="Image">
+                            </div>
+                            <div class="content">
+                                <h4 class="title">Project Title</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                <div class="actions">
+                                    <a href="#" class="link">Demo</a>
+                                    <a href="#" class="link">Github</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item" data-name="developer">
+                            <div class="thumb">
+                                <img src="assets/images/gallery/gallery-03.jpg" alt="Image">
+                            </div>
+                            <div class="content">
+                                <h4 class="title">Project Title</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                <div class="actions">
+                                    <a href="#" class="link">Demo</a>
+                                    <a href="#" class="link">Github</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item" data-name="design">
+                            <div class="thumb">
+                                <img src="assets/images/gallery/gallery-04.jpg" alt="Image">
+                            </div>
+                            <div class="content">
+                                <h4 class="title">Project Title</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                <div class="actions">
+                                    <a href="#" class="link">Demo</a>
+                                    <a href="#" class="link">Github</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item" data-name="developer">
+                            <div class="thumb">
+                                <img src="assets/images/gallery/gallery-05.jpg" alt="Image">
+                            </div>
+                            <div class="content">
+                                <h4 class="title">Project Title</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                <div class="actions">
+                                    <a href="#" class="link">Demo</a>
+                                    <a href="#" class="link">Github</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item" data-name="developer">
+                            <div class="thumb">
+                                <img src="assets/images/gallery/gallery-06.jpg" alt="Image">
+                            </div>
+                            <div class="content">
+                                <h4 class="title">Project Title</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                <div class="actions">
+                                    <a href="#" class="link">Demo</a>
+                                    <a href="#" class="link">Github</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item" data-name="design">
+                            <div class="thumb">
+                                <img src="assets/images/gallery/gallery-07.jpg" alt="Image">
+                            </div>
+                            <div class="content">
+                                <h4 class="title">Project Title</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                <div class="actions">
+                                    <a href="#" class="link">Demo</a>
+                                    <a href="#" class="link">Github</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item" data-name="developer">
+                            <div class="thumb">
+                                <img src="assets/images/gallery/gallery-08.jpg" alt="Image">
+                            </div>
+                            <div class="content">
+                                <h4 class="title">Project Title</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                <div class="actions">
+                                    <a href="#" class="link">Demo</a>
+                                    <a href="#" class="link">Github</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item" data-name="design">
+                            <div class="thumb">
+                                <img src="assets/images/gallery/gallery-09.jpg" alt="Image">
+                            </div>
+                            <div class="content">
+                                <h4 class="title">Project Title</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                <div class="actions">
+                                    <a href="#" class="link">Demo</a>
+                                    <a href="#" class="link">Github</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item" data-name="developer">
+                            <div class="thumb">
+                                <img src="assets/images/gallery/gallery-10.jpg" alt="Image">
+                            </div>
+                            <div class="content">
+                                <h4 class="title">Project Title</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                <div class="actions">
+                                    <a href="#" class="link">Demo</a>
+                                    <a href="#" class="link">Github</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item" data-name="marketing">
+                            <div class="thumb">
+                                <img src="assets/images/gallery/gallery-11.jpg" alt="Image">
+                            </div>
+                            <div class="content">
+                                <h4 class="title">Project Title</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                <div class="actions">
+                                    <a href="#" class="link">Demo</a>
+                                    <a href="#" class="link">Github</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item" data-name="marketing">
+                            <div class="thumb">
+                                <img src="assets/images/gallery/gallery-12.jpg" alt="Image">
+                            </div>
+                            <div class="content">
+                                <h4 class="title">Project Title</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                <div class="actions">
+                                    <a href="#" class="link">Demo</a>
+                                    <a href="#" class="link">Github</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>        
+            <!-- Our Projects End -->
+
+            <!-- Team Start -->
+            <section class="team-wrap bg section-padding">
+                <div class="container">
+                    <div class="heading">
+                        <h2 class="title">Our Team</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, eligendi? Doloremque amet eligendi eos voluptatum, sunt consequatur ipsam? Debitis iste totam error neque asperiores sequi architecto corrupti deserunt odit repellat?</p>
+                    </div>
+                    <div class="members">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                                <div class="member animation fadeInUp">
+                                    <div class="bgc"></div>
+                                    <div class="content">
+                                        <div class="image">
+                                            <img src="assets/images/team/member-01.jpg" alt="Member">
+                                        </div>
+                                        <div class="info">
+                                            <h1 class="name">Colin Carpenter</h1>
+                                            <h5 class="designation">CEO</h5>
+                                            <div class="step">
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, eligendi</p>
+                                            </div>
+                                        </div>
+                                        <div class="socials">
+                                            <ul class="lists">
+                                                <li class="list">
+                                                    <a href="#" class="link facebook" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                                                </li>
+                                                <li class="list">
+                                                    <a href="#" class="link twitter"><i class="fa-brands fa-twitter"></i></a>
+                                                </li>
+                                                <li class="list">
+                                                    <a href="#" class="link linkedin" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                                                </li>
+                                                <li class="list">
+                                                    <a href="#" class="link youtube" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                                <div class="member animation fadeInUp">
+                                    <div class="bgc"></div>
+                                    <div class="content">
+                                        <div class="image">
+                                            <img src="assets/images/team/member-02.jpg" alt="Member">
+                                        </div>
+                                        <div class="info">
+                                            <h1 class="name">Cullen Thornton</h1>
+                                            <h5 class="designation">CTO</h5>
+                                            <div class="step">
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, eligendi</p>
+                                            </div>
+                                        </div>
+                                        <div class="socials">
+                                            <ul class="lists">
+                                                <li class="list">
+                                                    <a href="#" class="link facebook" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                                                </li>
+                                                <li class="list">
+                                                    <a href="#" class="link twitter"><i class="fa-brands fa-twitter"></i></a>
+                                                </li>
+                                                <li class="list">
+                                                    <a href="#" class="link linkedin" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                                                </li>
+                                                <li class="list">
+                                                    <a href="#" class="link youtube" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                                <div class="member animation fadeInUp">
+                                    <div class="bgc"></div>
+                                    <div class="content">
+                                        <div class="image">
+                                            <img src="assets/images/team/member-03.jpg" alt="Member">
+                                        </div>
+                                        <div class="info">
+                                            <h1 class="name">Darius Joyner</h1>
+                                            <h5 class="designation">Chief Innovation Officer</h5>
+                                            <div class="step">
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, eligendi</p>
+                                            </div>
+                                        </div>
+                                        <div class="socials">
+                                            <ul class="lists">
+                                                <li class="list">
+                                                    <a href="#" class="link facebook" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                                                </li>
+                                                <li class="list">
+                                                    <a href="#" class="link twitter"><i class="fa-brands fa-twitter"></i></a>
+                                                </li>
+                                                <li class="list">
+                                                    <a href="#" class="link linkedin" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                                                </li>
+                                                <li class="list">
+                                                    <a href="#" class="link youtube" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                                <div class="member animation fadeInUp">
+                                    <div class="bgc"></div>
+                                    <div class="content">
+                                        <div class="image">
+                                            <img src="assets/images/team/member-04.jpg" alt="Member">
+                                        </div>
+                                        <div class="info">
+                                            <h1 class="name">Victoria Rivas</h1>
+                                            <h5 class="designation">VP of Product Management</h5>
+                                            <div class="step">
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, eligendi</p>
+                                            </div>
+                                        </div>
+                                        <div class="socials">
+                                            <ul class="lists">
+                                                <li class="list">
+                                                    <a href="#" class="link facebook" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                                                </li>
+                                                <li class="list">
+                                                    <a href="#" class="link twitter"><i class="fa-brands fa-twitter"></i></a>
+                                                </li>
+                                                <li class="list">
+                                                    <a href="#" class="link linkedin" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                                                </li>
+                                                <li class="list">
+                                                    <a href="#" class="link youtube" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Team End -->
 
             <!-- Blog Code Start -->
             <section class="blog-wrap section-padding">
@@ -449,82 +713,64 @@
                     </div>
                     <div class="blog-carousel">
                         <div class="blogs">
-                            <div class="item">
+                            <div class="item animation fadeInUp">
                                 <div class="image">
-                                    <img src="assets/images/versity/01.jpeg" alt="Versity">
-                                    <div class="blog-label">
-                                        <span class="txt">blog 20%</span>
-                                    </div>
+                                    <img src="assets/images/blog/01.jpg" alt="Blog">
                                 </div>
                                 <div class="content">
-                                    <h1 class="name"><a href="#" class="link">University Name</a></h1>
+                                    <h1 class="name"><a href="#" class="link">The Best Features Coming to iOS and Web design</a></h1>
                                     <p class="txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, autem neque. A laboriosam ipsam, numquam recusandae, enim consectetur repellat labore, inventore atque voluptate culpa earum ducimus quas natus aut molestiae?</p>
-                                    <a href="#" class="link"><span>More Details</span> <i class="fa-solid fa-angles-right"></i></a>
+                                    <a href="blog-details.html" class="link"><span>More Details</span> <i class="fa-solid fa-angles-right"></i></a>
                                 </div>
                             </div>
-                            <div class="item">
+                            <div class="item animation fadeInUp">
                                 <div class="image">
-                                    <img src="assets/images/versity/04.jpeg" alt="Versity">
-                                    <div class="blog-label">
-                                        <span class="txt">blog 20%</span>
-                                    </div>
+                                    <img src="assets/images/blog/02.jpg" alt="Blog">
                                 </div>
                                 <div class="content">
-                                    <h1 class="name"><a href="#" class="link">University Name</a></h1>
+                                    <h1 class="name"><a href="#" class="link">Latest Quirky Opening Sentence or Paragraph</a></h1>
                                     <p class="txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, autem neque. A laboriosam ipsam, numquam recusandae, enim consectetur repellat labore, inventore atque voluptate culpa earum ducimus quas natus aut molestiae?</p>
-                                    <a href="#" class="link"><span>More Details</span> <i class="fa-solid fa-angles-right"></i></a>
+                                    <a href="blog-details.html" class="link"><span>More Details</span> <i class="fa-solid fa-angles-right"></i></a>
                                 </div>
                             </div>
-                            <div class="item">
+                            <div class="item animation fadeInUp">
                                 <div class="image">
-                                    <img src="assets/images/versity/06.jpeg" alt="Versity">
-                                    <div class="blog-label">
-                                        <span class="txt">blog 20%</span>
-                                    </div>
+                                    <img src="assets/images/blog/03.jpg" alt="Blog">
                                 </div>
                                 <div class="content">
-                                    <h1 class="name"><a href="#" class="link">University Name</a></h1>
+                                    <h1 class="name"><a href="#" class="link">Share an Amazing and Shocking Fact or Statistic</a></h1>
                                     <p class="txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, autem neque. A laboriosam ipsam, numquam recusandae, enim consectetur repellat labore, inventore atque voluptate culpa earum ducimus quas natus aut molestiae?</p>
-                                    <a href="#" class="link"><span>More Details</span> <i class="fa-solid fa-angles-right"></i></a>
+                                    <a href="blog-details.html" class="link"><span>More Details</span> <i class="fa-solid fa-angles-right"></i></a>
                                 </div>
                             </div>
-                            <div class="item">
+                            <div class="item animation fadeInUp">
                                 <div class="image">
-                                    <img src="assets/images/versity/07.jpeg" alt="Versity">
-                                    <div class="blog-label">
-                                        <span class="txt">blog 20%</span>
-                                    </div>
+                                    <img src="assets/images/blog/04.jpg" alt="Blog">
                                 </div>
                                 <div class="content">
-                                    <h1 class="name"><a href="#" class="link">University Name</a></h1>
+                                    <h1 class="name"><a href="#" class="link">Withhold a Compelling Piece of Information</a></h1>
                                     <p class="txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, autem neque. A laboriosam ipsam, numquam recusandae, enim consectetur repellat labore, inventore atque voluptate culpa earum ducimus quas natus aut molestiae?</p>
-                                    <a href="#" class="link"><span>More Details</span> <i class="fa-solid fa-angles-right"></i></a>
+                                    <a href="blog-details.html" class="link"><span>More Details</span> <i class="fa-solid fa-angles-right"></i></a>
                                 </div>
                             </div>
-                            <div class="item">
+                            <div class="item animation fadeInUp">
                                 <div class="image">
-                                    <img src="assets/images/versity/08.jpeg" alt="Versity">
-                                    <div class="blog-label">
-                                        <span class="txt">blog 20%</span>
-                                    </div>
+                                    <img src="assets/images/blog/05.jpg" alt="Blog">
                                 </div>
                                 <div class="content">
-                                    <h1 class="name"><a href="#" class="link">University Name</a></h1>
+                                    <h1 class="name"><a href="#" class="link">Unadvertised Bonus Opening: Share a Quote</a></h1>
                                     <p class="txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, autem neque. A laboriosam ipsam, numquam recusandae, enim consectetur repellat labore, inventore atque voluptate culpa earum ducimus quas natus aut molestiae?</p>
-                                    <a href="#" class="link"><span>More Details</span> <i class="fa-solid fa-angles-right"></i></a>
+                                    <a href="blog-details.html" class="link"><span>More Details</span> <i class="fa-solid fa-angles-right"></i></a>
                                 </div>
                             </div>
-                            <div class="item">
+                            <div class="item animation fadeInUp">
                                 <div class="image">
-                                    <img src="assets/images/versity/09.jpeg" alt="Versity">
-                                    <div class="blog-label">
-                                        <span class="txt">blog 20%</span>
-                                    </div>
+                                    <img src="assets/images/blog/06.jpg" alt="Blog">
                                 </div>
                                 <div class="content">
-                                    <h1 class="name"><a href="#" class="link">University Name</a></h1>
+                                    <h1 class="name"><a href="#" class="link">FJH Quirky Opening Sentence or Paragraph</a></h1>
                                     <p class="txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, autem neque. A laboriosam ipsam, numquam recusandae, enim consectetur repellat labore, inventore atque voluptate culpa earum ducimus quas natus aut molestiae?</p>
-                                    <a href="#" class="link"><span>More Details</span> <i class="fa-solid fa-angles-right"></i></a>
+                                    <a href="blog-details.html" class="link"><span>More Details</span> <i class="fa-solid fa-angles-right"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -537,92 +783,6 @@
             </section>
             <!-- Blog Code End -->
 
-
-            <!-- University Code Start -->
-            <section class="universities-wrap section-padding animation">
-                <div class="container">
-                    <div class="heading">
-                        <h2 class="title">Our Partner's Universities & Colleges</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, eligendi? Doloremque amet eligendi eos voluptatum, sunt consequatur ipsam? Debitis iste totam error neque asperiores sequi architecto corrupti deserunt odit repellat?</p>
-                    </div>
-                    <div class="universities">
-                        <div class="item zoomIn">
-                            <div class="image">
-                                <img src="assets/images/versity/01.jpeg" alt="Versity">
-                            </div>
-                            <div class="content">
-                                <h1 class="name"><a href="#" class="link">University Name</a></h1>
-                            </div>
-                        </div>
-                        <div class="item zoomIn">
-                            <div class="image">
-                                <img src="assets/images/versity/02.jpeg" alt="Versity">
-                            </div>
-                            <div class="content">
-                                <h1 class="name"><a href="#" class="link">University Name</a></h1>
-                            </div>
-                        </div>
-                        <div class="item zoomIn">
-                            <div class="image">
-                                <img src="assets/images/versity/03.jpeg" alt="Versity">
-                            </div>
-                            <div class="content">
-                                <h1 class="name"><a href="#" class="link">University Name</a></h1>
-                            </div>
-                        </div>
-                        <div class="item zoomIn">
-                            <div class="image">
-                                <img src="assets/images/versity/04.jpeg" alt="Versity">
-                            </div>
-                            <div class="content">
-                                <h1 class="name"><a href="#" class="link">University Name</a></h1>
-                            </div>
-                        </div>
-                        <div class="item zoomIn">
-                            <div class="image">
-                                <img src="assets/images/versity/05.jpeg" alt="Versity">
-                            </div>
-                            <div class="content">
-                                <h1 class="name"><a href="#" class="link">University Name</a></h1>
-                            </div>
-                        </div>
-                        <div class="item zoomIn">
-                            <div class="image">
-                                <img src="assets/images/versity/06.jpeg" alt="Versity">
-                            </div>
-                            <div class="content">
-                                <h1 class="name"><a href="#" class="link">University Name</a></h1>
-                            </div>
-                        </div>
-                        <div class="item zoomIn">
-                            <div class="image">
-                                <img src="assets/images/versity/07.jpeg" alt="Versity">
-                            </div>
-                            <div class="content">
-                                <h1 class="name"><a href="#" class="link">University Name</a></h1>
-                            </div>
-                        </div>
-                        <div class="item zoomIn">
-                            <div class="image">
-                                <img src="assets/images/versity/08.jpeg" alt="Versity">
-                            </div>
-                            <div class="content">
-                                <h1 class="name"><a href="#" class="link">University Name</a></h1>
-                            </div>
-                        </div>
-                        <div class="item zoomIn">
-                            <div class="image">
-                                <img src="assets/images/versity/09.jpeg" alt="Versity">
-                            </div>
-                            <div class="content">
-                                <h1 class="name"><a href="#" class="link">University Name</a></h1>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- University Code End -->
-
         </div>
         <!-- Body Code End -->
 
@@ -630,14 +790,14 @@
 
         <!-- Footer Code Start -->
         <footer class="footer">
-            <div class="footer-top py-4">
-                <div class="container border-bottom">
+            <div class="footer-top animation">
+                <div class="container">
                     <div class="row mb-4">
-                        <div class="col-md-6 col-sm-12">
+                        <div class="col-md-6 col-sm-12 py-3 fadeInLeft">
                             <h5>JOIN IN OUR MAILING LIST</h5>
                             <p>Receive our latest updates about our products and promotions.</p>
                         </div>
-                        <div class="col-md-6 col-sm-12 d-flex align-items-center">
+                        <div class="col-md-6 col-sm-12 d-flex align-items-center py-3 animation fadeInRight">
                             <div class="input-group">
                                 <input type="text" class="form-control py-2" placeholder="example@gmail.com" aria-label="Recipient's username" aria-describedby="basic-addon2">
                                 <button class="input-group-text custom-btn shadow-none" id="basic-addon2">Subscribe</button>
@@ -650,7 +810,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="widgets">
-                            <div class="widget">
+                            <div class="widget animation fadeInDown">
                                 <h3 class="logo">
                                     <img src="assets/images/Logo.png" alt="Logo">
                                 </h3>
@@ -668,23 +828,23 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="widget">
+                            <div class="widget animation fadeInDown">
                                 <h3 class="title">Quick Links</h3>
                                 <ul class="lists">
-                                    <li class="list"><a href="about-us.html" class="link">Contact us</a></li>
-                                    <li class="list"><a href="contact-us.html" class="link">Contact us</a></li>
+                                    <li class="list"><a href="about-us.html" class="link">About Us</a></li>
+                                    <li class="list"><a href="contact-us.html" class="link">Contact Us</a></li>
                                     <li class="list"><a href="faq.html" class="link">Common FAQs</a></li>
                                     <li class="list"><a href="terms-conditions.html" class="link">Terms & Conditions</a></li>
-                                    <li class="list"><a href="privacy-policy.html" class="link">Privacy policy</a></li>
+                                    <li class="list"><a href="privacy-policy.html" class="link">Privacy Policy</a></li>
                                 </ul>
                             </div>
-                            <div class="widget">
+                            <div class="widget animation fadeInDown">
                                 <h3 class="title">Contact Us</h3>
                                 <div class="cont-info">
-                                    <p>London City ,356 Est ,klas</p>
-                                    <p>01894564564</p>
+                                    <p>271-Outer Circular Road, Boro Moghbazar, 1217-Dhaka, BD</p>
+                                    <p>+880 1741 571104</p>
                                     <p>demo@gmail.com</p>
-                                    <p>Open Time: 8:00AM - 6:00PM</p>
+                                    <p>Open Time: 10:00AM - 06:00PM</p>
                                 </div>
                             </div>
                         </div>

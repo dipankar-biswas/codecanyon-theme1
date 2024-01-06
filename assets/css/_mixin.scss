@@ -1,3 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --white-color : #fff;
+    --black-color : #000;
+
+    --primary-color : #ff6347;
+    --secondary-color : #5492bc;
+
+    --bg-color : #f2f2f2;
+    --bg-color1 : #a0a0a0;
+    --bg-color2 : #5492bc;
+
+    --heading-color : #444;
+    --paragraph-color : #777;
+
+    --text-color : #444;
+    --text-color1 : #555;
+
+    --link-color : #444;
+    --link-hover-color : #5492bc;
+    --link-active-color : #5492bc;
+    
+    --hover-color : #9e95f5;
+    --hover-color1 : #5492bc;
+
+    --border-color : #ddd;
+    --border-color1 : #ff5757;
+    --border-color2 : #ccc;
+
+    --box-shadow : 0 2px 6px rgba(0,0,0,.15);
+    --box-shadow1 : 0 3px 12px rgba(0,0,0,.2);
+    --box-shadow2 : -1px 2px 22px rgba(0,0,0,.15);
+
+    --scrollbar-color : #0000;
+    --scrollbar-color1 : #d9d9d9;
+
+    --text-active-color : #ff5353;
+    --text-hover-color : #ff5353;
+
+    --fs-normal : 14px;
+    --fs-big : 52px;
+    --fs1 : 42px;
+    --fs2 : 32px;
+    --fs3 : 24px;
+    --fs4 : 20px;
+    --fs5 : 18px;
+    --fs6 : 16px;
+
+    --facebook-color : #0866FF;
+    --twitter-color : #00acee;
+    --linkedin-color : #0072b1;
+    --instagram-color : #EE3567;
+    --youtube-color : #CD201F;
+}
+
+
+
 // Display Flex
 @mixin df-jcc(){
     display: flex;
@@ -62,6 +120,16 @@
     z-index: $i;
 }
 @mixin pa-c-lt-wh-bg(){}
+@mixin pa-c-lt-wh-bg-o($pa,$c,$l,$t,$w,$h,$bg,$o){
+    position: $pa;
+    content: $c;
+    left: $l;
+    top: $t;
+    width: $w;
+    height: $h;
+    background: $bg;
+    opacity: $o;
+}
 @mixin pa-c-lt-wh-bg-zi($pa,$c,$l,$t,$w,$h,$bg,$zi){
     position: $pa;
     content: $c;

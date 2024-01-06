@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/slide.css">
-    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
 </head>
 <body>
     <div id="apps">
@@ -56,25 +56,26 @@
 
         <!-- Header Code Start -->
         <header class="header">
+            <div class="overlay"></div>
             <div class="logo-bar">
                 <div class="container h-100">
                     <div class="row h-100">
-                        <div class="col-3 dt-none ph-lg-block">
-                            <div class="mobile-bars d-flex justify-content-start align-items-center h-100 column-gap-4">
+                        <div class="col-lg-2 col-8">
+                            <div class="logo d-flex justify-content-start align-items-center h-100">
+                                <a href="index.html">
+                                    <img src="assets/images/Logo.png" alt="Logo">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-4 dt-none ph-lg-block">
+                            <div class="mobile-bars d-flex justify-content-end align-items-center h-100 column-gap-4">
                                 <div class="icon aside-open">
                                     <i class="fa-solid fa-bars"></i>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-2 col-6">
-                            <div class="logo d-flex justify-content-start align-items-center h-100">
-                                <a href="index.html">
-                                    <img class="mw-100" src="assets/images/Logo.png" alt="Logo">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-lg-8 ph-lg-none">
-                            <div class="d-flex justify-content-center align-items-center h-100 column-gap-3">
+                        <div class="col-lg-10">
+                            <div class="d-flex justify-content-end align-items-center h-100 column-gap-3">
                                 <div class="navigation">
                                     <div class="container">
                                         <div class="row">
@@ -83,18 +84,18 @@
                                                     <h4 class="title">Menu</h4>
                                                     <span class="aside-close"><i class="fa-solid fa-xmark"></i></span>
                                                 </div>
-                                                <li class="item active">
+                                                <li class="item">
                                                     <a class="link" href="index.html">
                                                         <span class="txt">Home</span>
                                                     </a>
                                                 </li>
-                                                <li class="item">
+                                                <li class="item active">
                                                     <a class="link" href="about-us.html">
                                                         <span class="txt">About Us</span>
                                                     </a>
                                                 </li>
                                                 <li class="item tree">
-                                                    <a class="link" href="#">
+                                                    <a class="link" href="services.html">
                                                         <span class="txt">Our Services</span>
                                                         <span class="icon"><i class="fa-solid fa-angle-down"></i></span>
                                                     </a>
@@ -156,13 +157,6 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-2 col-3">
-                            <div class="d-flex justify-content-end align-items-center h-100 column-gap-4">
-                                <div class="apply">
-                                    <a href="#" class="custom-btn text-white fw-bold rounded-3">Contact</a>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -172,9 +166,9 @@
 
         <!-- Body Code Start -->
         <div class="page-wrapper">
-            <section class="banner bg-light" style="background-image: url('assets/images/slider/01.jpeg');">
+            <section class="banner bg-light" style="background-image: url('assets/images/banner/banner-04.jpg');">
                 <div class="content text-center">
-                    <h1 class="title text-white fw-bold">About Us</h1>
+                    <h1 class="title text-white fw-bold">Blog</h1>
                     <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 </div>
             </section>
@@ -184,12 +178,12 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-6">
-                            <div class="image">
+                            <div class="image animation fadeInLeft">
                                 <img src="assets/images/slider/04.jpeg" alt="About Image">
                             </div>
                         </div>
                         <div class="col-lg-6">
-                            <div class="content">
+                            <div class="content animation fadeInRight">
                                 <div class="heading text-start">
                                     <h2 class="title">About Us</h2>
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -207,13 +201,19 @@
                                         </div>
                                         <div class="icon"><i class="fa-brands fa-youtube"></i></div>
                                     </div>
-                                    <a href="about-us.html" class="custom-btn shadow-none rounded d-inline-block">Read More</a>
+                                    <a href="about-us.html" class="custom-btn1 shadow-none rounded d-inline-block">Read More</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
+            <div class="displayVideo">
+                <div class="view">
+                    <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+                </div>
+                <div class="close-btn"><i class="fa-solid fa-xmark"></i></div>
+            </div>
             <!-- About Us End -->
 
             <!-- Counter Box Start -->
@@ -221,11 +221,11 @@
                 <div class="container">
                     <div class="heading mb-5">
                         <h2 class="title">SOME OF OUR ACHIEVEMENTS</h2>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias voluptatibus, facere ducimus minima, nam iusto illo sit quis tenetur eligendi ex natus aut voluptatum laborum neque non maiores nostrum ratione.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     </div>
                     <div class="row">
-                        <div class="col-lg-3">
-                            <div class="item">
+                        <div class="col-lg-3 col-6">
+                            <div class="item animation fadeInDown">
                                 <div class="box">
                                     <div class="icon"><i class="fa-solid fa-handshake"></i></div>
                                     <h4 class="counter">4</h4>
@@ -233,8 +233,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3">
-                            <div class="item">
+                        <div class="col-lg-3 col-6">
+                            <div class="item animation fadeInDown">
                                 <div class="box">
                                     <div class="icon"><i class="fa-solid fa-business-time"></i></div>
                                     <h4 class="counter">13</h4>
@@ -242,8 +242,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3">
-                            <div class="item">
+                        <div class="col-lg-3 col-6">
+                            <div class="item animation fadeInDown">
                                 <div class="box">
                                     <div class="icon"><i class="fa-solid fa-users"></i></div>
                                     <h4 class="counter">15+</h4>
@@ -251,8 +251,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3">
-                            <div class="item">
+                        <div class="col-lg-3 col-6">
+                            <div class="item animation fadeInDown">
                                 <div class="box">
                                     <div class="icon"><i class="fa-solid fa-trophy"></i></div>
                                     <h4 class="counter">0</h4>
@@ -264,6 +264,7 @@
                 </div>
             </div>
             <!-- Counter Box End -->
+
         </div>
         <!-- Body Code End -->
 
@@ -271,14 +272,14 @@
 
         <!-- Footer Code Start -->
         <footer class="footer">
-            <div class="footer-top py-4">
-                <div class="container border-bottom">
+            <div class="footer-top animation">
+                <div class="container">
                     <div class="row mb-4">
-                        <div class="col-md-6 col-sm-12">
+                        <div class="col-md-6 col-sm-12 py-3 fadeInLeft">
                             <h5>JOIN IN OUR MAILING LIST</h5>
                             <p>Receive our latest updates about our products and promotions.</p>
                         </div>
-                        <div class="col-md-6 col-sm-12 d-flex align-items-center">
+                        <div class="col-md-6 col-sm-12 d-flex align-items-center py-3 animation fadeInRight">
                             <div class="input-group">
                                 <input type="text" class="form-control py-2" placeholder="example@gmail.com" aria-label="Recipient's username" aria-describedby="basic-addon2">
                                 <button class="input-group-text custom-btn shadow-none" id="basic-addon2">Subscribe</button>
@@ -291,7 +292,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="widgets">
-                            <div class="widget">
+                            <div class="widget animation fadeInDown">
                                 <h3 class="logo">
                                     <img src="assets/images/Logo.png" alt="Logo">
                                 </h3>
@@ -309,23 +310,23 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="widget">
+                            <div class="widget animation fadeInDown">
                                 <h3 class="title">Quick Links</h3>
                                 <ul class="lists">
-                                    <li class="list"><a href="about-us.html" class="link">Contact us</a></li>
-                                    <li class="list"><a href="contact-us.html" class="link">Contact us</a></li>
+                                    <li class="list"><a href="about-us.html" class="link">About Us</a></li>
+                                    <li class="list"><a href="contact-us.html" class="link">Contact Us</a></li>
                                     <li class="list"><a href="faq.html" class="link">Common FAQs</a></li>
                                     <li class="list"><a href="terms-conditions.html" class="link">Terms & Conditions</a></li>
-                                    <li class="list"><a href="privacy-policy.html" class="link">Privacy policy</a></li>
+                                    <li class="list"><a href="privacy-policy.html" class="link">Privacy Policy</a></li>
                                 </ul>
                             </div>
-                            <div class="widget">
+                            <div class="widget animation fadeInDown">
                                 <h3 class="title">Contact Us</h3>
                                 <div class="cont-info">
-                                    <p>London City ,356 Est ,klas</p>
-                                    <p>01894564564</p>
+                                    <p>271-Outer Circular Road, Boro Moghbazar, 1217-Dhaka, BD</p>
+                                    <p>+880 1741 571104</p>
                                     <p>demo@gmail.com</p>
-                                    <p>Open Time: 8:00AM - 6:00PM</p>
+                                    <p>Open Time: 10:00AM - 06:00PM</p>
                                 </div>
                             </div>
                         </div>
@@ -355,7 +356,5 @@
     <!-- Js Link -->
     <script type="text/javascript" src="assets/js/bootstrap.bundle.min.js"></script>
     <script type="text/javascript" src="assets/js/main.js"></script>
-    <script type="text/javascript" src="assets/js/slide.js"></script>
-    <script type="text/javascript" src="assets/js/blog.js"></script>
 </body>
 </html>

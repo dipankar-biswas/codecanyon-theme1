@@ -1,0 +1,66 @@
+.animation.fadeInLeft,
+.animation .fadeInLeft {
+  transition: 1s;
+  opacity: 0;
+  transform: translateX(-40%);
+}
+.animation.fadeInRight,
+.animation .fadeInRight {
+  transition: 1s;
+  opacity: 0;
+  transform: translateX(40%);
+}
+.animation.fadeInLeft.animate, .animation.fadeInRight.animate {
+  opacity: 1;
+  transform: translateX(0%);
+}
+.animation.animate .fadeInLeft, .animation.animate .fadeInRight {
+  opacity: 1;
+  transform: translateX(0%);
+}
+.animation.animate.fadeInLeft, .animation.animate.fadeInRight {
+  opacity: 1;
+  transform: translateX(0%);
+}
+.animation.zoomIn,
+.animation .zoomIn {
+  transition: 1s;
+  opacity: 0;
+  transform: scale(0.7);
+}
+.animation.animate .zoomIn, .animation.animate .zoomIn {
+  opacity: 1;
+  transform: scale(1);
+}
+.animation.animate.zoomIn, .animation.animate.zoomIn {
+  opacity: 1;
+  transform: scale(1);
+}
+.animation.fadeInUp,
+.animation .fadeInUp {
+  transition: 1s;
+  opacity: 0;
+  transform: translateY(40%);
+}
+.animation.animate .fadeInUp, .animation.animate .fadeInUp {
+  opacity: 1;
+  transform: translateY(0);
+}
+.animation.animate.fadeInUp, .animation.animate.fadeInUp {
+  opacity: 1;
+  transform: translateY(0);
+}
+.animation.fadeInDown,
+.animation .fadeInDown {
+  transition: 1s;
+  opacity: 0;
+  transform: translateY(-40%);
+}
+.animation.animate .fadeInDown, .animation.animate .fadeInDown {
+  opacity: 1;
+  transform: translateY(0);
+}
+.animation.animate.fadeInDown, .animation.animate.fadeInDown {
+  opacity: 1;
+  transform: translateY(0);
+}/*# sourceMappingURL=animate.css.map */
