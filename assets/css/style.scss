@@ -1469,6 +1469,16 @@ nav {
 }
 
 @media only screen and (max-width: 375px) {
-
+    // About Us
+    .displayVideo {
+        &.show {
+            .view {
+                max-height: 280px !important;
+                iframe {
+                    max-height: 280px !important;
+                }
+            }
+        }
+    }
 }
 

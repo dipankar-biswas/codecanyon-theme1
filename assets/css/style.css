@@ -1326,4 +1326,12 @@ nav .pagination .page-item .page-link:focus {
   .service-wrap .services {
     grid-template-columns: 1fr;
   }
+}
+@media only screen and (max-width: 375px) {
+  .displayVideo.show .view {
+    max-height: 280px !important;
+  }
+  .displayVideo.show .view iframe {
+    max-height: 280px !important;
+  }
 }/*# sourceMappingURL=style.css.map */
