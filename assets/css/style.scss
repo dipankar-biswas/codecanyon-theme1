@@ -1448,7 +1448,7 @@ nav {
                     width: 100%;
                     height: 120px;
                     border-radius: 12px 12px 0 0;
-                    background: linear-gradient(106.32deg, var(--primary-color) 14.23%, rgba(255, 25, 25, 0) 139.97%);
+                    background: linear-gradient(106.32deg, var(--primary-color) 14%, var(--secondary-color) 140%);
                 }
                 .content {
                     @include pr-zi(1000);
