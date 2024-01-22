@@ -122,40 +122,40 @@
 }
 @media screen and (max-width: 767px) {
   .slide-wrap .slides .slide .content .img {
-    height: auto;
+    height: auto !important;
   }
   .slide-wrap .slides .slide .content .text .title {
-    font-size: 21px;
+    font-size: 21px !important;
   }
   .slide-wrap .slides .slide .content .text p {
     font-size: 14px !important;
   }
   .slide-wrap .slides .slide .content .text .link {
-    padding: 6px 32px;
+    padding: 6px 32px !important;
     font-size: 14px !important;
   }
 }
 @media screen and (max-width: 575px) {
   .slide-wrap .slides {
-    grid-auto-columns: 100%;
+    grid-auto-columns: 100% !important;
   }
   .slide-wrap .slides .slide {
-    max-height: -moz-max-content;
-    max-height: max-content;
-    height: -moz-max-content;
-    height: max-content;
+    max-height: -moz-max-content !important;
+    max-height: max-content !important;
+    height: -moz-max-content !important;
+    height: max-content !important;
   }
   .slide-wrap .slides .slide .content {
-    flex-direction: column;
+    flex-direction: column !important;
   }
   .slide-wrap .slides .slide .content .img {
-    width: auto;
+    width: auto !important;
   }
   .slide-wrap .slides .slide .content .img img {
-    max-width: 300px;
-    max-height: 300px;
+    max-width: 300px !important;
+    max-height: 300px !important;
   }
   .slide-wrap .slides .slide .content .text {
-    width: 100%;
+    width: 100% !important;
   }
 }/*# sourceMappingURL=slide.css.map */

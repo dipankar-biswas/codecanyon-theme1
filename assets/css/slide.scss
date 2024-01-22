@@ -131,17 +131,17 @@
         .slide {
           .content {
             .img {
-              height: auto;
+              height: auto !important;
             }
             .text {
               .title {
-                font-size: 21px;
+                font-size: 21px !important;
               }
               p {
                 font-size: 14px !important;
               }
               .link {
-                padding: 6px 32px;
+                padding: 6px 32px !important;
                 font-size: 14px !important;
               }
             }
@@ -153,21 +153,21 @@
   @media screen and (max-width: 575px) {
     .slide-wrap {
       .slides {
-        grid-auto-columns: 100%;
+        grid-auto-columns: 100% !important;
         .slide {
-          max-height: max-content;
-          height: max-content;
+          max-height: max-content !important;
+          height: max-content !important;
           .content {
-            flex-direction: column;
+            flex-direction: column !important;
             .img {
-              width: auto;
+              width: auto !important;
               img {
-                max-width: 300px;
-                max-height: 300px;
+                max-width: 300px !important;
+                max-height: 300px !important;
               }
             }
             .text {
-              width: 100%;
+              width: 100% !important;
             }
           }
         }
