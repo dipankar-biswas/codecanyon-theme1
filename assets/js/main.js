@@ -1,3 +1,11 @@
+// Page Load
+window.addEventListener('load', (e) => {
+	setTimeout(function(){
+	    document.querySelector(".page-loader").classList.remove('show');
+        handleScroll();
+	},500);
+});
+
 // Overlay Div 
 let menu_overly = document.querySelector('.overlay');
 
@@ -111,28 +119,25 @@ function calculateVisiblePixels(el) {
     var visiblePixels = Math.max(0, Math.min(rect.bottom, windowHeight) - Math.max(rect.top, 0));
 
     return visiblePixels;
-  }
+}
 
-  function handleScroll() {
+function handleScroll() {
     var sections = document.querySelectorAll('.animation');
     var counter = document.querySelector('.count-down .animate');
 
     sections.forEach(function(section) {
-      var visiblePixels = calculateVisiblePixels(section);
+        var visiblePixels = calculateVisiblePixels(section);
 
-      if (visiblePixels > 100) {
-          section.classList.add('animate');
-          if(section == counter && count_index == 0){
-            numberCount();
-          }
-      }
+        if (visiblePixels > 100) {
+            section.classList.add('animate');
+            if(section == counter && count_index == 0){
+                numberCount();
+            }
+        }
     });
+}
 
-    
-  }
-
-  window.addEventListener('scroll', handleScroll);
-  handleScroll();
+window.addEventListener('scroll', handleScroll);
 
 
 
